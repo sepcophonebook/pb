@@ -9,8 +9,7 @@
 <link rel="stylesheet" href="sepcopbstyle2.css">
 <link rel="stylesheet" href="sepcopbstyle3.css">
 <link rel="stylesheet" href="sepcopbstyle4.css">
-<script src="sepcopb1.js"></script>
-<script src="sepcopb2.js"></script>
+
 
 </head>
 
@@ -392,6 +391,48 @@ SEPCO HQ Sukkur
 
 </ul>
 </div>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+
+        }
+    }
+}
+
+</script>
+
+
+<script>
+window.onscroll = function() {myFunctions()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+
+function myFunctions() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+</script>
+
+
+
 
 
 </body>
