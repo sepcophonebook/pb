@@ -1,0 +1,41 @@
+
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 16px 16px 16px 16px;
+  border: 1px solid #fb72f0;
+  margin-bottom: 1px;
+	
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+#myUL li a {
+  border: 1px solid #096;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #ffffff;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+  font-family: Candara;
+  
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #7282fb;
+  color: white;	
+}
