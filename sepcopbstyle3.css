@@ -15,8 +15,8 @@ body {
 
 .header {
   padding: 10px 16px;
-  background: #7282fb;
-  color: #f1f1f1;
+  background: #ffffff;
+  color: #7282fb;
 }
 
 .content {
@@ -39,6 +39,3 @@ img.sepco {
   width: 10%;
   
 }
-
-
-
