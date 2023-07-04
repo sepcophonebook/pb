@@ -8,9 +8,38 @@
 <link rel="stylesheet" href="sepcologin.css">
 <script src="sepcologin1.js"></script>
 
+
+
+
+
+
+
 </head>
 
-<body>
+<body onload="startTime()">
+
+
+<div id="txt"></div>
+
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+
+}
+</script>
+
 
    <div class="modal-content animate">
 
@@ -20,6 +49,8 @@
     <div class="imgcontainer">
       
       <img src="phoneup.png" alt="SEPCO" class="sepco">
+
+
   
 
     <div class="container">
@@ -42,7 +73,9 @@
       </label>
 
     </div>
-<b>© SEPCO Phonebook - June 2023</b></label>
+<b>© SEPCO Phonebook - June 2023</b>
+
+
 <p style = "color:black; font-size:14px; font-variant:small-caps;"><b>Prepared & designed By:
 <br>
 Soomro Tufail</b>
@@ -59,6 +92,8 @@ SEPCO HQ Sukkur
 </div>
 
 </form>   
+
+
 
 </body>
 </html>
